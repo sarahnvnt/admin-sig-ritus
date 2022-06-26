@@ -1,0 +1,23 @@
+[{
+        "name": "Gasing",
+        "year": 2012,
+        "type": "pencatatan",
+        "reg_num": "09213453",
+        "desc": "lompat tali adalah salah satu",
+        "img": ["eee.sakdjfkjs/dasdf", "eee.sakdjfkjs/dasdf"],
+        "video": ["eee.sakdjfkjs/dasdf", "eee.sakdjfkjs/dasdf"],
+        "province_id": "625f6d6e11ac55c5cbe5f7cb",
+        "province": "625f92e4c84cd047f008c105"
+    },
+    {
+        "name": "Gasing",
+        "year": 2012,
+        "type": "pencatatan",
+        "reg_num": "09213453",
+        "desc": "lompat tali adalah salah satu",
+        "img": ["eee.sakdjfkjs/dasdf", "eee.sakdjfkjs/dasdf"],
+        "video": ["eee.sakdjfkjs/dasdf", "eee.sakdjfkjs/dasdf"],
+        "province_id": "625f6d6e11ac55c5cbe5f7cb",
+        "province": "625f92e4c84cd047f008c105"
+    }
+]

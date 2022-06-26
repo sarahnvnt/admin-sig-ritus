@@ -1,0 +1,37 @@
+.textField {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+
+  input {
+    margin: 5px 0;
+    padding: 10px;
+    outline: 0.5px solid lightgray;
+    border-style: none;
+    border-radius: 5px;
+
+    &:hover {
+      outline: 1px solid black;
+    }
+
+    &:focus {
+      outline: 2px solid #4093f9;
+    }
+  }
+
+  .error {
+    color: rgb(255, 0, 0);
+    font-size: 0.9rem;
+    padding-left: 5px;
+    background-color: #ddcf91;
+    border-radius: 5px;
+    width: 150px;
+  }
+}
