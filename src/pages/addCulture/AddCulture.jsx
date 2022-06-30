@@ -183,7 +183,7 @@ const AddCulture = () => {
   const handleSubmit = async (values) => {
     const uri = await handleUpload();
     const uris = await handleUploads();
-    const vids = values.video.split(",");
+    // const vids = values.video.split(",");
     // const testing = [];
     // testing.push(...uris);
     // uris.map((i) => console.log(i));
@@ -192,7 +192,7 @@ const AddCulture = () => {
       ...values,
       img: image ? uri : "",
       // imgs: testing,
-      video: vids,
+      // video: vids,
     };
     // console.log(culture.images);
     addCulture(culture, toast, setIsSubmitting);
