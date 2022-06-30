@@ -1,10 +1,12 @@
 import React from "react";
 import "./widget.scss";
 import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
-import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
+// import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+// import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
 import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
 import LocalFloristOutlinedIcon from "@mui/icons-material/LocalFloristOutlined";
+import MosqueRoundedIcon from "@mui/icons-material/MosqueRounded";
+import MapRoundedIcon from "@mui/icons-material/MapRounded";
 
 const Widget = ({ type, value }) => {
   let data;
@@ -16,10 +18,10 @@ const Widget = ({ type, value }) => {
   switch (type) {
     case "user":
       data = {
-        title: "BUDAYA",
+        title: "BUDAYA RITUS",
         isMoney: false,
         link: "Lihat Semua Ritus",
-        icon: <PersonOutlineOutlinedIcon className="icon" />,
+        icon: <MosqueRoundedIcon className="icon" />,
       };
       break;
     case "order":
@@ -27,7 +29,7 @@ const Widget = ({ type, value }) => {
         title: "PROVINSI",
         isMoney: true,
         link: "Lihat Semua Provinsi",
-        icon: <Inventory2OutlinedIcon className="icon" />,
+        icon: <MapRoundedIcon className="icon" />,
       };
       break;
     case "products":
@@ -59,9 +61,9 @@ const Widget = ({ type, value }) => {
       </div>
       <div className="right">
         <div className="percentage positive">
-          <ArrowUpwardOutlinedIcon /> {diff}%
+          <ArrowUpwardOutlinedIcon />
         </div>
-        {data.icon}
+        {/* {data.icon} */}
       </div>
     </div>
   );

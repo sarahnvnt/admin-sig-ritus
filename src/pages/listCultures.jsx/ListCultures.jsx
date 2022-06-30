@@ -32,6 +32,16 @@ const ListCultures = () => {
       },
     },
     {
+      field: "type",
+      headerName: "type",
+      minWidth: 100,
+      flex: 1,
+
+      renderCell: (params) => {
+        return params.row.type || "-";
+      },
+    },
+    {
       field: "year",
       headerName: "Tahun",
       minWidth: 100,

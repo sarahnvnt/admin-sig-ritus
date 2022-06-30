@@ -38,6 +38,17 @@ const AddCulture = () => {
     getProvinces(dispatch);
   }, []);
 
+  // const type = [
+  //   {
+  //   id :"1"
+  //   name: "Pencatatan"
+  //   },
+  //   {
+  //   id :"2"
+  //   name: "Penetapan"
+  //   },
+  //   ]
+
   const handleUpload = () => {
     return new Promise((resolve, reject) => {
       if (image) {
@@ -188,32 +199,35 @@ const AddCulture = () => {
   };
 
   return (
-    <div className="addCulture">
+    <div className="addRitus">
       <Formik
         initialValues={{
           name: "",
           year: null,
+          // type: "",
           reg_num: "",
           desc: "",
-          video: "",
+          // video: "",
           province: "",
         }}
         validationSchema={Yup.object({
-          name: Yup.string().required("Wajib diisi"),
-          province: Yup.string().required("Wajib diisi"),
+          name: Yup.string().required("Nama Wajib diisi"),
+          province: Yup.string().required("Provinsi Wajib diisi"),
         })}
         onSubmit={(values) => {
           setIsSubmitting(true);
           handleSubmit(values, setIsSubmitting);
         }}
       >
-        <Form className="addCulture">
+        <Form className="addRitus">
           <TextField
             label="Nama Ritus"
             type="text"
             name="name"
             placeholder="Nama Ritus"
           />
+          {/* <SelectField options={type} label="type" name="type" /> */}
+          {/* <TextField label="type" type="text" name="type" placeholder="type" /> */}
           <SelectField options={provinces} label="Provinsi" name="province" />
           <TextField
             label="Tahun Registrasi"
@@ -285,12 +299,12 @@ const AddCulture = () => {
               </div>
             )}
           </div>
-          <TextField
+          {/* <TextField
             label="Galeri Video"
             type="text"
             name="video"
             placeholder="Link1,https://www.youtube.com/embed/tqbByU0lA7U"
-          />
+          /> */}
           <button type="submit">
             {isSubmitting ? (
               <CircularProgress color="inherit" size="1.7rem" thickness={5} />

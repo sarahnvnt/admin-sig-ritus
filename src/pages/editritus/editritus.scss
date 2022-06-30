@@ -1,4 +1,4 @@
-.editCulture {
+.editRitus {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -9,7 +9,7 @@
       flex-direction: column;
       gap: 5px;
 
-      .uploadButton {
+      .buttonUpload {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -23,7 +23,7 @@
       }
     }
 
-    .img-container {
+    .imgContainer {
       border: 1px solid lightgray;
       padding: 5px;
       display: flex;

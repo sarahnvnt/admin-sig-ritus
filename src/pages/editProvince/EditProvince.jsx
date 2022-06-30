@@ -32,10 +32,10 @@ const EditProvince = () => {
         }}
         enableReinitialize
         validationSchema={Yup.object({
-          name: Yup.string().required("Harus diisi"),
-          lat: Yup.number().required("Harus diisi"),
-          long: Yup.number().required("Harus diisi"),
-          geojson: Yup.string().required("Harus diisi"),
+          name: Yup.string().required("Nama Provinsi Harus diisi"),
+          lat: Yup.number().required("Latitude Harus diisi"),
+          long: Yup.number().required("Longitude Harus diisi"),
+          geojson: Yup.string().required("Geojson Harus diisi"),
         })}
         onSubmit={(values) => {
           setIsSubmitting(true);

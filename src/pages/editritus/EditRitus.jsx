@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import TextArea from "../../components/fields/textarea/TextArea";
 import TextField from "../../components/fields/textfield/TextField";
 import { getCulture, getProvinces, updateCulture } from "../../redux/apiCalls";
-import DriveFolderUploadIcon from "@mui/icons-material/DriveFolderUpload";
+import BackupRoundedIcon from "@mui/icons-material/BackupRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import {
   getStorage,
@@ -194,7 +194,7 @@ const EditRitus = () => {
   };
 
   return (
-    <div className="editCulture">
+    <div className="editRitus">
       <Formik
         initialValues={{
           name: culture.name,
@@ -204,14 +204,14 @@ const EditRitus = () => {
         }}
         enableReinitialize
         validationSchema={Yup.object({
-          name: Yup.string().required("Harus diisi"),
+          name: Yup.string().required("Data Harus diisi"),
         })}
         onSubmit={(values) => {
           setIsSubmitting(true);
           handleSubmit(values, setIsSubmitting);
         }}
       >
-        <Form className="addCulture">
+        <Form className="addRitus">
           <TextField
             label="Nama Ritus"
             type="text"
@@ -247,7 +247,7 @@ const EditRitus = () => {
             <div htmlFor="file">
               Gambar Utama
               <label htmlFor="file1" className="uploadButton">
-                <DriveFolderUploadIcon className="icon" />
+                <BackupRoundedIcon className="icon" />
                 Pilih Gambar
               </label>
             </div>
@@ -264,7 +264,7 @@ const EditRitus = () => {
               }}
             />
             {image || imageUrl ? (
-              <div className="img-container">
+              <div className="imgContainer">
                 <div className="image">
                   <img
                     src={imageUrl ? imageUrl : URL.createObjectURL(image)}
@@ -286,8 +286,8 @@ const EditRitus = () => {
           <div className="img">
             <div>
               Galeri Gambar
-              <label htmlFor="file2" className="uploadButton">
-                <DriveFolderUploadIcon className="icon" />
+              <label htmlFor="file2" className="buttonUpload">
+                <BackupRoundedIcon className="icon" />
                 Tambah Gambar
               </label>
             </div>
@@ -324,7 +324,7 @@ const EditRitus = () => {
               </div>
             )}
           </div>
-          <div className="input-video">
+          {/* <div className="input-video">
             <label htmlFor="">Galeri Video</label>
             <input
               type="text"
@@ -336,7 +336,7 @@ const EditRitus = () => {
               Link berupa link embed ex:
               https://www.youtube.com/embed/tqbByU0lA7U
             </p>
-          </div>
+          </div> */}
 
           {video?.length > 0 && (
             <div className="videos-container">

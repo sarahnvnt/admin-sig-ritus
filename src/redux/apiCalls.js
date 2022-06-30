@@ -65,10 +65,10 @@ export const updateUser = async (id, user, setIsSubmitting, toast) => {
     const res = await userRequest.put(`/admins/${id}`, user);
     console.log(res.data);
     setIsSubmitting(false);
-    toast.success("Perubahan Berhasil Disimpan");
+    toast.success("Perubahan Data Berhasil Disimpan");
   } catch (err) {
     setIsSubmitting(false);
-    toast.error("Perubahan Gagal Disimpan");
+    toast.error("Perubahan Data Gagal Disimpan ");
   }
 };
 
@@ -77,10 +77,10 @@ export const deleteUser = async (id, dispatch, toast) => {
   try {
     const res = await userRequest.delete(`/admins/${id}`);
     dispatch(deleteUsersSuccess(id));
-    toast.success("Berhasil Menghapus");
+    toast.success("Berhasil Menghapus Data");
   } catch (err) {
     dispatch(deleteUsersFailure());
-    toast.error("Gagal Menghapus");
+    toast.error("Gagal Menghapus Data");
   }
 };
 
@@ -107,10 +107,10 @@ export const deleteProvince = async (id, dispatch, toast) => {
   try {
     const res = await userRequest.delete(`/provinces/${id}`);
     dispatch(deleteProvincesSuccess(id));
-    toast.success("Berhasil Menghapus");
+    toast.success("Berhasil Menghapus Data");
   } catch (err) {
     dispatch(deleteProvincesFailure());
-    toast.error("Gagal Menghapus");
+    toast.error("Gagal Menghapus Data");
   }
 };
 
@@ -125,10 +125,10 @@ export const updateProvince = async (
     const res = await userRequest.put(`/provinces/${provinceId}`, province);
     console.log(res.data);
     setIsSubmitting(false);
-    toast.success("Perubahan Berhasil Disimpan");
+    toast.success("Perubahan Data Berhasil Disimpan");
   } catch (err) {
     setIsSubmitting(false);
-    toast.error("Perubahan Gagal Disimpan");
+    toast.error("Perubahan Data Gagal Disimpan");
   }
 };
 
@@ -138,11 +138,11 @@ export const addCulture = async (culture, toast, setIsSubmitting) => {
     console.log(res.data);
     console.log("SUKSES");
     setIsSubmitting(false);
-    toast.success("Permainan Berhasil Dibuat");
+    toast.success("Data Ritus Berhasil Dibuat");
   } catch (err) {
     console.log(err);
     setIsSubmitting(false);
-    toast.error("Permainan Gagal Dibuat");
+    toast.error("Data Ritus Gagal Dibuat");
   }
 };
 
@@ -177,10 +177,10 @@ export const updateCulture = async (
     const res = await userRequest.put(`/cultures/${id}`, input);
     setIsSubmitting(false);
     getCultures(dispatch);
-    toast.success("Perubahan Berhasil Disimpan");
+    toast.success("Perubahan Data Berhasil Disimpan");
   } catch (err) {
     setIsSubmitting(false);
-    toast.error("Perubahan Gagal Disimpan");
+    toast.error("Perubahan Data Gagal Disimpan");
   }
 };
 
@@ -189,10 +189,10 @@ export const deleteCulture = async (id, dispatch, toast) => {
   try {
     const res = await userRequest.delete(`/cultures/${id}`);
     dispatch(deleteCulturesSuccess(id));
-    toast.success("Berhasil Menghapus");
+    toast.success("Berhasil Menghapus Data");
   } catch (err) {
     dispatch(deleteCulturesFailure());
-    toast.error("Gagal Menghapus");
+    toast.error("Gagal Menghapus Data");
   }
 };
 
@@ -202,11 +202,11 @@ export const addProvince = async (province, toast, setIsSubmitting) => {
     console.log(res.data);
     console.log("SUKSES");
     setIsSubmitting(false);
-    toast.success("Provinsi Berhasil Dibuat");
+    toast.success("Data Provinsi Berhasil Dibuat");
   } catch (err) {
     console.log(err);
     setIsSubmitting(false);
-    toast.error("Provinsi Gagal Dibuat");
+    toast.error("Data Provinsi Gagal Dibuat");
   }
 };
 export const addUser = async (input, toast, setIsSubmitting) => {
@@ -215,10 +215,10 @@ export const addUser = async (input, toast, setIsSubmitting) => {
     console.log(res.data);
     console.log("SUKSES");
     setIsSubmitting(false);
-    toast.success("User Berhasil Dibuat");
+    toast.success("Data User Berhasil Dibuat");
   } catch (err) {
     console.log(err);
     setIsSubmitting(false);
-    toast.error("User Gagal Dibuat");
+    toast.error("Data User Gagal Dibuat");
   }
 };
