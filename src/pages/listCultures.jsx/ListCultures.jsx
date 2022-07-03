@@ -34,7 +34,7 @@ const ListCultures = () => {
     {
       field: "type",
       headerName: "type",
-      minWidth: 100,
+      minWidth: 80,
       flex: 1,
 
       renderCell: (params) => {
@@ -44,7 +44,7 @@ const ListCultures = () => {
     {
       field: "year",
       headerName: "Tahun",
-      minWidth: 100,
+      minWidth: 80,
       flex: 1,
       renderCell: (params) => {
         return params.row.year || "-";
@@ -74,7 +74,7 @@ const ListCultures = () => {
     {
       field: "desc",
       headerName: "Deskripsi",
-      minWidth: 200,
+      minWidth: 150,
       flex: 1,
       renderCell: (params) => {
         return params.row.desc || "-";

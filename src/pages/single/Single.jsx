@@ -14,7 +14,7 @@ const Single = () => {
     <div className="new">
       <Sidebar />
       <div className="newContainer">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="top">
           <h1>Edit {pathName()}</h1>
         </div>

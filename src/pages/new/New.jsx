@@ -15,10 +15,15 @@ const New = ({ inputs, title }) => {
     <div className="new">
       <Sidebar />
       <div className="newContainer">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="top">
           <h1>Tambah {pathName()}</h1>
         </div>
+        {/* <div className="back">
+          <a href="/cultures">
+            <button>Back</button>
+          </a>
+        </div> */}
         <div className="mid">
           {setDataPage(<AddCulture />, <AddProvince />, <AddUser />)}
         </div>

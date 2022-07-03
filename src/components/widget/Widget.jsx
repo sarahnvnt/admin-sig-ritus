@@ -22,6 +22,7 @@ const Widget = ({ type, value }) => {
         isMoney: false,
         link: "Lihat Semua Ritus",
         icon: <MosqueRoundedIcon className="icon" />,
+        path: "/cultures",
       };
       break;
     case "order":
@@ -30,6 +31,7 @@ const Widget = ({ type, value }) => {
         isMoney: true,
         link: "Lihat Semua Provinsi",
         icon: <MapRoundedIcon className="icon" />,
+        path: "/provinces",
       };
       break;
     case "products":
@@ -40,14 +42,14 @@ const Widget = ({ type, value }) => {
         icon: <LocalFloristOutlinedIcon className="icon" />,
       };
       break;
-    case "delivery":
-      data = {
-        title: "DELIVERIES",
-        isMoney: true,
-        link: "see all deliveries",
-        icon: <LocalShippingOutlinedIcon className="icon" />,
-      };
-      break;
+    // case "delivery":
+    //   data = {
+    //     title: "DELIVERIES",
+    //     isMoney: true,
+    //     link: "see all deliveries",
+    //     icon: <LocalShippingOutlinedIcon className="icon" />,
+    //   };
+    //   break;
     default:
       break;
   }
@@ -57,13 +59,15 @@ const Widget = ({ type, value }) => {
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">{value}</span>
-        <span className="link">{data.link}</span>
+        <span className="link">
+          <a href={data.path}>{data.link}</a>
+        </span>
       </div>
       <div className="right">
-        <div className="percentage positive">
+        {/* <div className="percentage positive">
           <ArrowUpwardOutlinedIcon />
-        </div>
-        {/* {data.icon} */}
+        </div> */}
+        {data.icon}
       </div>
     </div>
   );

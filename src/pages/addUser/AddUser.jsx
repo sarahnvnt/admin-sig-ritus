@@ -65,7 +65,7 @@ const AddUser = () => {
             {isSubmitting ? (
               <CircularProgress color="inherit" size="1.7rem" thickness={5} />
             ) : (
-              "Tambah"
+              "Tambahkan Admin"
             )}
           </button>
         </Form>

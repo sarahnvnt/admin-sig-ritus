@@ -24,7 +24,7 @@ const List = () => {
     <div className="list">
       <Sidebar />
       <div className="listContainer">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="listWrapper">
           {setDataPage(<ListCultures />, <ListProvince />, <ListUsers />)}
         </div>

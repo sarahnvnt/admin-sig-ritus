@@ -309,11 +309,14 @@ const AddCulture = () => {
             {isSubmitting ? (
               <CircularProgress color="inherit" size="1.7rem" thickness={5} />
             ) : (
-              "Submit"
+              "Tambahkan Data Ritus"
             )}
           </button>
         </Form>
       </Formik>
+      {/* <a href="/cultures">
+        <button>Back</button>
+      </a> */}
 
       <ToastContainer
         position="bottom-center"

@@ -61,13 +61,13 @@ const EditProvince = () => {
               label="Latitude"
               type="number"
               name="lat"
-              placeholder="-9.039485"
+              placeholder="-8.86981"
             />
             <TextField
               label="Longitude"
               type="number"
               name="long"
-              placeholder="92.2398"
+              placeholder="89.65841"
             />
           </div>
 

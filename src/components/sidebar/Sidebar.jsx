@@ -37,7 +37,7 @@ const Sidebar = () => {
     },
     {
       id: 4,
-      title: "Pengguna",
+      title: "Admin",
       icon: <GroupAddRoundedIcon className="icon" />,
       path: "/users",
     },
