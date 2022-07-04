@@ -150,8 +150,8 @@ const Datatable = ({ rows, columns, handleDelete }) => {
         rows={list}
         columns={columns.concat(actionColumn)}
         pageSize={9}
-        rowsPerPageOptions={[9]}
-        checkboxSelection
+        rowsPerPageOptions={[10]}
+        // checkboxSelection
       />
       <ConfirmDialog
         open={openConfirm}

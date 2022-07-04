@@ -20,11 +20,11 @@ const ListUsers = () => {
   };
 
   const provinceColumns = [
-    { field: "_id", headerName: "ID", minWidth: 100, flex: 1 },
+    { field: "_id", headerName: "ID", minWidth: 150, flex: 1 },
     {
       field: "username",
       headerName: "Username",
-      minWidth: 200,
+      minWidth: 250,
       flex: 1,
 
       renderCell: (params) => {
