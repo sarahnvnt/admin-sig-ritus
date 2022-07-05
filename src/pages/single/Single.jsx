@@ -19,7 +19,7 @@ const Single = () => {
           <h1>Edit {pathName()}</h1>
         </div>
         <div className="mid">
-          {setDataPage(<EditRitus />, <EditProvince />, <EditUser />)}
+          {setDataPage(<EditRitus />, <EditProvince />, <EditRitus />)}
         </div>
       </div>
     </div>

@@ -35,12 +35,12 @@ const Sidebar = () => {
       icon: <AddLocationAltRoundedIcon className="icon" />,
       path: "/provinces",
     },
-    {
-      id: 4,
-      title: "Admin",
-      icon: <GroupAddRoundedIcon className="icon" />,
-      path: "/users",
-    },
+    // {
+    //   id: 4,
+    //   title: "Admin",
+    //   icon: <GroupAddRoundedIcon className="icon" />,
+    //   path: "/users",
+    // },
     {
       id: 5,
       title: "Keluar",

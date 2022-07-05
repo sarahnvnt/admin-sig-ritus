@@ -5,7 +5,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import "./new.scss";
 import AddCulture from "../addCulture/AddCulture";
 import AddProvince from "../addProvince/AddProvince";
-import AddUser from "../addUser/AddUser";
+// import AddUser from "../addUser/AddUser";
 import { pathName, setDataPage } from "../../utils/naming";
 
 const New = ({ inputs, title }) => {
@@ -25,7 +25,7 @@ const New = ({ inputs, title }) => {
           </a>
         </div> */}
         <div className="mid">
-          {setDataPage(<AddCulture />, <AddProvince />, <AddUser />)}
+          {setDataPage(<AddCulture />, <AddProvince />, <AddCulture />)}
         </div>
       </div>
     </div>
