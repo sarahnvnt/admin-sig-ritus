@@ -31,16 +31,16 @@ const ListCultures = () => {
         return params.row.reg_num || "-";
       },
     },
-    {
-      field: "type",
-      headerName: "type",
-      minWidth: 80,
-      flex: 1,
+    // {
+    //   field: "type",
+    //   headerName: "type",
+    //   minWidth: 80,
+    //   flex: 1,
 
-      renderCell: (params) => {
-        return params.row.type || "-";
-      },
-    },
+    //   renderCell: (params) => {
+    //     return params.row.type || "-";
+    //   },
+    // },
     {
       field: "year",
       headerName: "Tahun",
@@ -56,7 +56,6 @@ const ListCultures = () => {
       headerName: "Nama Ritus",
       minWidth: 150,
       flex: 1,
-
       renderCell: (params) => {
         return params.row.name;
       },

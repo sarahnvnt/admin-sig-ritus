@@ -213,6 +213,11 @@ const AddCulture = () => {
         validationSchema={Yup.object({
           name: Yup.string().required("Nama Wajib diisi"),
           province: Yup.string().required("Provinsi Wajib diisi"),
+          year: Yup.number()
+            .typeError("Tahun wajib diisi")
+            .min(2010, "Tahun harus lebih dari atau sama dengan 2010")
+            .max(2022, "Tahun melebihi dari tahun registrasi")
+            .required("Tahun Wajib diisi"),
         })}
         onSubmit={(values) => {
           setIsSubmitting(true);
@@ -248,7 +253,7 @@ const AddCulture = () => {
           />
           <div className="img">
             <div htmlFor="file">
-              Gambar Utama
+              Gambar Ritus
               <label htmlFor="file1" className="uploadButton">
                 <BackupRoundedIcon className="icon" />
                 Pilih Gambar
@@ -272,7 +277,7 @@ const AddCulture = () => {
 
           <div className="img">
             <div>
-              Galeri Gambar
+              Galeri Gambar Ritus
               <label htmlFor="file2" className="uploadButton">
                 <BackupRoundedIcon className="icon" />
                 Tambah Gambar

@@ -6,7 +6,7 @@
   -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   border-radius: 10px;
-  height: 100px;
+  height: 120px;
 
   .left,
   .right {
@@ -46,9 +46,10 @@
     // }
 
     .icon {
-      font-size: 18px;
-      padding: 5px;
-      background-color: rgba(128, 0, 128, 0.353);
+      font-size: 90px;
+      padding: 15px;
+      color: #2d6161;
+      // background-color: rgba(128, 0, 128, 0.353);
       border-radius: 5px;
       align-self: flex-end;
     }

@@ -23,7 +23,7 @@ const AddProvince = () => {
         validationSchema={Yup.object({
           name: Yup.string().required("Nama Provinsi Harus diisi"),
           lat: Yup.number()
-            .typeError("Harus diisi berupa angka")
+            .typeError("Latitude Harus diisi berupa angka")
             .required("Latitude Harus diisi"),
           long: Yup.number()
             .typeError("Longitude Harus berupa angka")

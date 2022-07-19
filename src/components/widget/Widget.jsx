@@ -1,47 +1,36 @@
 import React from "react";
 import "./widget.scss";
-import ArrowUpwardOutlinedIcon from "@mui/icons-material/ArrowUpwardOutlined";
-// import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-// import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
-import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
-import LocalFloristOutlinedIcon from "@mui/icons-material/LocalFloristOutlined";
 import MosqueRoundedIcon from "@mui/icons-material/MosqueRounded";
 import MapRoundedIcon from "@mui/icons-material/MapRounded";
 
 const Widget = ({ type, value }) => {
   let data;
 
-  // temp
-  const amount = 100;
-  const diff = 20;
-
   switch (type) {
-    case "user":
+    case "ritus":
       data = {
         title: "BUDAYA RITUS",
-        isMoney: false,
         link: "Lihat Semua Ritus",
         icon: <MosqueRoundedIcon className="icon" />,
         path: "/cultures",
       };
       break;
-    case "order":
+    case "provinces":
       data = {
         title: "PROVINSI",
-        isMoney: true,
         link: "Lihat Semua Provinsi",
         icon: <MapRoundedIcon className="icon" />,
         path: "/provinces",
       };
       break;
-    case "products":
-      data = {
-        title: "ADMIN",
-        isMoney: false,
-        link: "lihat semua admin",
-        icon: <LocalFloristOutlinedIcon className="icon" />,
-      };
-      break;
+    // case "products":
+    //   data = {
+    //     title: "ADMIN",
+    //     isMoney: false,
+    //     link: "lihat semua admin",
+    //     icon: <LocalFloristOutlinedIcon className="icon" />,
+    //   };
+    //   break;
     // case "delivery":
     //   data = {
     //     title: "DELIVERIES",

@@ -26,9 +26,13 @@ const Home = () => {
       <Sidebar />
       <div className="homeContainer">
         <Navbar />
+        <h1 style={{ textAlign: "center" }}>
+          Admin Sistem Informasi Geografis
+        </h1>
+        {/* <p>Selamat Datang di halaman Admin Sistem Informasi Geografis</p> */}
         <div className="widgets">
-          <Widget type="user" value={cultures.length} />
-          <Widget type="order" value={provinces.length} />
+          <Widget type="ritus" value={cultures.length} />
+          <Widget type="provinces" value={provinces.length} />
           {/* <Widget type="products" value={users.length} /> */}
         </div>
         <div className="charts">

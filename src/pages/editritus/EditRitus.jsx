@@ -204,7 +204,12 @@ const EditRitus = () => {
         }}
         enableReinitialize
         validationSchema={Yup.object({
-          name: Yup.string().required("Data Harus diisi"),
+          name: Yup.string().required("Nama Ritus Harus diisi"),
+          year: Yup.number()
+            .typeError("Tahun wajib diisi")
+            .min(2010, "Tahun harus lebih dari atau sama dengan 2010")
+            .max(2022, "Tahun melebihi dari tahun registrasi")
+            .required("Tahun Wajib diisi"),
         })}
         onSubmit={(values) => {
           setIsSubmitting(true);
@@ -338,13 +343,13 @@ const EditRitus = () => {
             </p>
           </div> */}
 
-          {video?.length > 0 && (
+          {/* {video?.length > 0 && (
             <div className="videos-container">
               {video?.filter(Boolean).map((video) => (
                 <iframe width="320" height="215" src={video}></iframe>
               ))}
             </div>
-          )}
+          )} */}
 
           <button type="submit" disabled={isSubmitting}>
             {isSubmitting ? (

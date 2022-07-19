@@ -10,8 +10,6 @@ import { fieldName, pathName, setDataPage, tahun } from "../../utils/naming";
 import CustomFilter from "../fields/customFilter/CustomFilter";
 import { getProvinces } from "../../redux/apiCalls";
 import { useDispatch, useSelector } from "react-redux";
-import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
-import ModeEditOutlineRoundedIcon from "@mui/icons-material/ModeEditOutlineRounded";
 
 const Datatable = ({ rows, columns, handleDelete }) => {
   const [inputSearch, setInputSearch] = useState("");
@@ -53,7 +51,7 @@ const Datatable = ({ rows, columns, handleDelete }) => {
         );
       }
 
-      console.log(updatedList);
+      // console.log(updatedList);
       setList(updatedList);
     };
     applyFilters();
@@ -93,7 +91,7 @@ const Datatable = ({ rows, columns, handleDelete }) => {
         <Link to={`./new`} style={{ textDecoration: "none" }}>
           <div className="addButton">
             <AddRoundedIcon />
-            Add {pathName()}
+            Tambah Data {pathName()}
           </div>
         </Link>
         <div className="searchFilters">
@@ -149,7 +147,7 @@ const Datatable = ({ rows, columns, handleDelete }) => {
         getRowId={(row) => row._id}
         rows={list}
         columns={columns.concat(actionColumn)}
-        pageSize={9}
+        pageSize={20}
         rowsPerPageOptions={[10]}
         // checkboxSelection
       />

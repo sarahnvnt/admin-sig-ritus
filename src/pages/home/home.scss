@@ -3,6 +3,18 @@
 
   .homeContainer {
     flex: 6;
+    h1 {
+      // font-family: monospace;
+      align-items: center;
+      color: #2d4141;
+      padding-top: 10px;
+    }
+    p {
+      padding: 10px;
+      padding-left: 20px;
+      align-items: center;
+      color: #2d4141;
+    }
 
     .widgets,
     .charts {

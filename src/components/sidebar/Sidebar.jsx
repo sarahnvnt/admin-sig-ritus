@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./sidebar.scss";
 import { useDispatch } from "react-redux";
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
-import GroupAddRoundedIcon from "@mui/icons-material/GroupAddRounded";
+// import GroupAddRoundedIcon from "@mui/icons-material/GroupAddRounded";
 import ExitToAppRoundedIcon from "@mui/icons-material/ExitToAppRounded";
 import AddLocationAltRoundedIcon from "@mui/icons-material/AddLocationAltRounded";
 import MosqueRoundedIcon from "@mui/icons-material/MosqueRounded";
@@ -25,13 +25,13 @@ const Sidebar = () => {
     },
     {
       id: 2,
-      title: "Ritus",
+      title: " Data Ritus",
       icon: <MosqueRoundedIcon className="icon" />,
       path: "/cultures",
     },
     {
       id: 3,
-      title: "Provinsi",
+      title: "Data Provinsi",
       icon: <AddLocationAltRoundedIcon className="icon" />,
       path: "/provinces",
     },

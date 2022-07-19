@@ -121,7 +121,7 @@ export const updateProvince = async (
   toast
 ) => {
   try {
-    // update
+    // update provinsi
     const res = await userRequest.put(`/provinces/${provinceId}`, province);
     console.log(res.data);
     setIsSubmitting(false);
@@ -138,11 +138,11 @@ export const addCulture = async (culture, toast, setIsSubmitting) => {
     console.log(res.data);
     console.log("SUKSES");
     setIsSubmitting(false);
-    toast.success("Data Ritus Berhasil Dibuat");
+    toast.success("Data Ritus Berhasil Ditambahkan");
   } catch (err) {
     console.log(err);
     setIsSubmitting(false);
-    toast.error("Data Ritus Gagal Dibuat");
+    toast.error("Data Ritus Gagal Ditambahkan ");
   }
 };
 
@@ -173,7 +173,7 @@ export const updateCulture = async (
   dispatch
 ) => {
   try {
-    // update
+    // update data ritus
     const res = await userRequest.put(`/cultures/${id}`, input);
     setIsSubmitting(false);
     getCultures(dispatch);
@@ -202,11 +202,11 @@ export const addProvince = async (province, toast, setIsSubmitting) => {
     console.log(res.data);
     console.log("SUKSES");
     setIsSubmitting(false);
-    toast.success("Data Provinsi Berhasil Dibuat");
+    toast.success("Data Provinsi Berhasil Ditambahkan");
   } catch (err) {
     console.log(err);
     setIsSubmitting(false);
-    toast.error("Data Provinsi Gagal Dibuat");
+    toast.error("Data Provinsi Gagal Ditambahkan");
   }
 };
 export const addUser = async (input, toast, setIsSubmitting) => {
