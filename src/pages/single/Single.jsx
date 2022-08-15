@@ -1,12 +1,8 @@
 import React from "react";
-import Chart from "../../components/chart/Chart";
-import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
-import Table from "../../components/table/Table";
 import { pathName, setDataPage } from "../../utils/naming";
 import EditRitus from "../editritus/EditRitus";
 import EditProvince from "../editProvince/EditProvince";
-import EditUser from "../editUser/EditUser";
 import "./single.scss";
 
 const Single = () => {
